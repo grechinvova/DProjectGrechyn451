@@ -1,0 +1,77 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 17.05.2024 15:25
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.8.1
+WORDPRESS:	6.4.3
+PHP INFO:	8.1.9 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (1536M default) 
+MEMORY STACK: 84MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20240221_d0bfd180d0b0d0bad182d0b8d187d0b_93136c75bad7f0fb9138_20240517152523_database.sql
+SQL FILE SIZE: 1.46MB (1534768)
+SQL FILE TIME: 2024-05-17 15:26:01
+SQL RUNTIME: 3.32 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/OSPanel/domains/wordpress
+ARCHIVE FILE: 20240221_d0bfd180d0b0d0bad182d0b8d187d0b_93136c75bad7f0fb9138_20240517152523_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	178.18MB
+STATS:	Dirs 1,758 | Files 10,743
+SQL ADDED: 20240221_d0bfd180d0b0d0bad182d0b8d187d0b_93136c75bad7f0fb9138_20240517152523_database.sql
+ZipArchive Object
+(
+    [lastId] => 12500
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 12501
+    [filename] => C:\OSPanel\domains\wordpress\wp-content\backups-dup-lite\tmp\20240221_d0bfd180d0b0d0bad182d0b8d187d0b_93136c75bad7f0fb9138_20240517152523_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 12500
+[PHP ERR][WARN] MSG:ZipArchive::close(): Can't open file: No such file or directory [CODE:2|FILE:C:\OSPanel\domains\wordpress\wp-content\plugins\duplicator\classes\package\class.pack.archive.zip.php|LINE:220]
+do_action('wp_ajax_duplicator_package_build'), WP_Hook->do_action, WP_Hook->apply_filters, duplicator_package_build, DUP_Package->runZipBuild, DUP_Archive->build, DUP_Zip::create, ZipArchive->close, DUP_Handler::error, DUP_Handler::getMessage
+
+==================================================================================
+DUPLICATOR ERROR
+Please try again! If the error persists see the Duplicator 'Help' menu.
+---------------------------------------------------------------------------------
+MESSAGE:
+	ZipArchive close failure.
+DETAILS:
+	The ZipArchive engine is having issues zipping up the files on this server. For more details visit the FAQ
+I'm getting a ZipArchive close failure when building. How can I resolve this?
+[https://duplicator.com/knowledge-base/how-to-resolve-zip-format-related-build-issues/]
+TRACE:
+	 1. class.pack.archive.zip.php : error (230)
+	 2. class.pack.archive.php : create (131)
+	 3. class.pack.php : build (1374)
+	 4. ctrl.package.php : runZipBuild (89)
+	 5. class-wp-hook.php : duplicator_package_build (324)
+	 6. class-wp-hook.php : apply_filters (348)
+	 7. plugin.php : do_action (517)
+	 8. admin-ajax.php : do_action (188)
+==================================================================================
+
+building installer
+[PHP ERR][WARN] MSG:ZipArchive::addFile(): No such file or directory [CODE:2|FILE:C:\OSPanel\domains\wordpress\wp-content\plugins\duplicator\classes\utilities\class.u.zip.php|LINE:158]
+do_action('wp_ajax_duplicator_package_build'), WP_Hook->do_action, WP_Hook->apply_filters, duplicator_package_build, DUP_Package->runZipBuild, DUP_Installer->build, DUP_Installer->add_extra_files, DUP_Installer->zipArchiveAddExtra, DUP_Zip_U::addFileToZipArchive, ZipArchive->addFile, DUP_Handler::error, DUP_Handler::getMessage
